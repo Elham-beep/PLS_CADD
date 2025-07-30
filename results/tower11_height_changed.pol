@@ -1,0 +1,712 @@
+TYPE='PLS_POLE INPUT FILE' VERSION='22' UNITS='INTERNAL' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+0 ; use edf suffixes
+
+
+0 0 ; write saps sum, page length
+1.225000 0.000000 1e-08 ; rho, input temp, EP1
+1 1000 20 ; analysis type, max iterations, # points on cable
+0.1000000000 1.0000000000 1000000.0000000000 3.0000000000 0.0000000000 ; max imbalance, ascorm, dasat, pwiter, min stiffness
+5 ; Joints Geometry: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
+'CA3-1'
+0 0 0 0 0 0
+0 3.00 25.00 0
+0 1 0
+'' '' 0 0 0 0
+'CA2-1'
+0 0 0 0 0 0
+0 5.00 28.10 0
+0 1 0
+'' '' 0 0 0 0
+'CA2-2'
+0 0 0 0 0 0
+0 3.30 28.10 0
+0 0 0
+'' '' 0 0 0 0
+'CA2-3'
+0 0 0 0 0 0
+0 -2.20 28.10 0
+0 0 0
+'' '' 0 0 0 0
+'CA1-1'
+0 0 0 0 0 0
+0 3.00 31.20 0
+0 1 0
+'' '' 0 0 0 0
+
+0 ; number truss properties
+
+0  ; number beam properties
+
+0  ; number cable properties
+
+0 ; number subs properties
+0 0 1 0 0 0.000000 0 0 0; analysis option, print rotations, echo input, gen diffs, load type to use, followed by .lca, .lic, .eia filename lines
+
+
+
+9 0 0
+0 0 1 -0.5 2 0.25 ; show ID views, use user ID ratios, use negative ratios, min ratio, max ratio, increment
+1 1 1 1 1 ; offset: arms, braces, guys, posts, strains
+0 2 0 3 ; auto add to parts list, part add action
+1000.000000000000 0.142857142857 0.000000000000 ; wind reference height, power ground elevation
+'' '' '' 0 1 1 0 1 1 1 1 0 0 0 0 0 1 0 1 1 0 0 0 131072 0; postproc exe name, post proc output name, post proc cmd line, post proc options, postproc name options, post proc unit system, auto save, generate analysis results, summary
+''
+''
+
+
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.ssl
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.cab
+0 ; Structure Cable Connectivity: label\n origin\n joint\n property 
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.cab
+0 ; Guy Connectivity: label\n origin\n joint\n property 
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.brc
+0 ; Brace Connectivity: label\n origin\n joint\n property 
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.dvt
+0 ; Davit Arm Connectivity: label\n origin\n joint\n property 
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.tdv
+0 ; Tubular Davit Arm Connectivity: label\n origin\n joint\n property 
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.xrm
+6 ; X-Arm Connectivity: label\n origin\n joint\n property 
+Cru-Ir
+
+
+CROSSARM-3
+0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
+           0            0            0
+2
+'Cru-Ir:O' 'CA:3'            0 1
+'Cru-Ir:E' 'CA3-1P'            3 2
+Cru-Sr
+
+
+CROSSARM-3
+0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
+           0            0 4.71238898038
+2
+'Cru-Sr:O' 'CA:1'            0 1
+'Cru-Sr:E' 'CA1-1P'            3 2
+Cru-Il
+
+
+CROSSARM-3
+0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
+           0            0 4.71238898038
+2
+'Cru-Il:O' 'CA:3'            0 1
+'Cru-Il:E' 'CA3-1X'            3 2
+Cru-Sl
+
+
+CROSSARM-3
+0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
+           0            0 4.71238898038
+2
+'Cru-Sl:O' 'CA:1'            0 1
+'Cru-Sl:E' 'CA1-1X'            3 2
+Cru-Mr
+
+
+CROSSARM-5
+1 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
+'Cru-Mr:2P'
+0 0 0 0 0 0
+0 0 0 0
+0 0 3.3
+'' '' 0 0 0 0
+           0            0 4.71238898038
+3
+'Cru-Mr:O' 'CA:2'            0 1
+'Cru-Mr:2P' 'CA2-2P'          3.3 8
+'Cru-Mr:E' 'CA2-1P'            5 8
+Cru-ML
+
+
+CROSSARM-5
+1 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
+'Cru-ML:3P'
+0 0 0 0 0 0
+0 0 0 0
+0 0 2.2
+'' '' 0 0 0 0
+           0            0 4.71238898038
+3
+'Cru-ML:O' 'CA:2'            0 1
+'Cru-ML:3P' 'CA2-3P'          2.2 2
+'Cru-ML:E' 'CA2-1X'            5 8
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.xtm
+0 ; Tubular X-Arm Connectivity: label\n origin\n joint\n property 
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.eqp
+0 ; Equipment Connectivity: label\n origin\n joint\n property 
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.can
+0 ; CAN Connectivity: label\n origin\n joint\n property 
+0 ; attach label, desc
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.mat
+0 ; load name, attach label, dead load, tran wind area, long wind area
+0 ; appurt name, from joint, to joint, is flat, is inside, unit weight, width, perimeter
+1 ; support label, long shear, tran shear, comp, uplift, long moment, tran moment, torsional moment, resultant
+'CA:g'            0            0            0            0            0            0            0            0            0            0
+           0            0            0            0            0            0
+0          2.6            0 0            0 0 0            0
+0.076200000000 27578979.301976032555 0.152400000000 0.152400000000 0.005000000000 413684689.529640495777 0
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.inl
+0 ; Clamp Insulator Connectivity
+0 ; Suspension Insulator Connectivity
+16 ; Strain Insulator Connectivity
+'A1-R-1.1' 'CA1-1P' 'INL_A1-R-1.1' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+1.570796 ; azimuth
+'A1-R-1.2' 'CA1-1P' 'INL_A1-R-1.2' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+4.712389 ; azimuth
+'A2-R-1.2' 'CA2-1P' 'INL_A2-R-1.2' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+4.712389 ; azimuth
+'A2-R-2.1' 'CA2-2P' 'INL_A2-R-2.1' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+1.570796 ; azimuth
+'A3-R-1.1' 'CA3-1P' 'INL_A3-R-1.1' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+1.570796 ; azimuth
+'A3-R-1.2' 'CA3-1P' 'INL_A3-R-1.2' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+4.712389 ; azimuth
+'A1-L-1.1' 'CA1-1X' 'INL_A1-L-1.1' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+1.570796 ; azimuth
+'A1-L-1.2' 'CA1-1X' 'INL_A1-L-1.2' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+4.712389 ; azimuth
+'A2-L-1.1' 'CA2-1X' 'INL_A2-L-1.1' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+1.570796 ; azimuth
+'A2-L-1.2' 'CA2-1X' 'INL_A2-L-1.2' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+4.712389 ; azimuth
+'A2-L-2.1' 'CA2-3P' 'INL_A2-L-2.1' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+1.570796 ; azimuth
+'A2-L-2.2' 'CA2-3P' 'INL_A2-L-2.2' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+4.712389 ; azimuth
+'A3-L-1.1' 'CA3-1X' 'INL_A3-L-1.1' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+1.570796 ; azimuth
+'A3-L-1.2' 'CA3-1X' 'INL_A3-L-1.2' 'STRAIN' 0 0.000000 ; label, str attach joint, tip label, property
+4.712389 ; azimuth
+'G1-1.1' 'CA:t' 'INL_G1-1.1' 'EW' 0 0.000000 ; label, str attach joint, tip label, property
+1.570796 ; azimuth
+'G1-1.2' 'CA:t' 'INL_G1-1.2' 'EW' 0 0.000000 ; label, str attach joint, tip label, property
+4.712389 ; azimuth
+0 ; Post Insulator Connectivity
+0 ; 2-Parts Insulator Connectivity
+0 ; Guy Strain Insulator Connectivity
+16 ; insulator link: insulator label, tip label, set name, insulator type, set #, phase #, is dead end
+'A1-R-1.1' 'INL_A1-R-1.1' '' 1 25 1 1 ''
+'A1-R-1.2' 'INL_A1-R-1.2' '' 1 45 1 1 ''
+'A2-R-1.2' 'INL_A2-R-1.2' '' 1 46 1 1 ''
+'A2-R-2.1' 'INL_A2-R-2.1' '' 1 26 1 1 ''
+'A3-R-1.1' 'INL_A3-R-1.1' '' 1 27 1 1 ''
+'A3-R-1.2' 'INL_A3-R-1.2' '' 1 47 1 1 ''
+'A1-L-1.1' 'INL_A1-L-1.1' '' 1 21 1 1 ''
+'A1-L-1.2' 'INL_A1-L-1.2' '' 1 41 1 1 ''
+'A2-L-1.1' 'INL_A2-L-1.1' '' 1 22 1 1 ''
+'A2-L-1.2' 'INL_A2-L-1.2' '' 1 42 1 1 ''
+'A2-L-2.1' 'INL_A2-L-2.1' '' 1 23 1 1 ''
+'A2-L-2.2' 'INL_A2-L-2.2' '' 1 43 1 1 ''
+'A3-L-1.1' 'INL_A3-L-1.1' '' 1 24 1 1 ''
+'A3-L-1.2' 'INL_A3-L-1.2' '' 1 44 1 1 ''
+'G1-1.1' 'INL_G1-1.1' '' 1 39 1 1 ''
+'G1-1.2' 'INL_G1-1.2' '' 1 59 1 1 ''
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\Swissgrid.spp
+0 ; Steel Pole Connectivity: label\n origin\n joint\n property 
+0
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.cpp
+1 ; Concrete Pole Connectivity: label\n origin\n joint\n property 
+CA
+
+
+C-32.2
+3 ; Relative Attachment Labels for: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
+'CA:3'
+0 0 0 0 0 0
+0 0 0 24
+0 0 0
+'' '' 0 0 0 0
+'CA:2'
+0 0 0 0 0 0
+0 0 0 27.1
+0 0 0
+'' '' 0 0 0 0
+'CA:1'
+0 0 0 0 0 0
+0 0 0 30.2
+0 0 0
+'' '' 0 0 0 0
+           0            0            0            0            0
+0            0            0
+           0            0
+0
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.wpp
+0 ; Wood Pole Connectivity: label\n origin\n joint\n property 
+0
+0  ; wood pole strength check
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.lpp
+0 ; Laminated Wood Pole Connectivity: label\n origin\n joint\n property 
+0
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.fpp
+0 ; FRP Pole Connectivity: label\n origin\n joint\n property 
+0
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.mas
+0 ; Mast Connectivity: label\n origin\n joint\n property 
+0 ; Vang Connectivity: label\n origin\n joint\n property 
+C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.frm
+0 ; Framing Connectivity: label\n origin\n joint\n property 
+0 ; defect desc, attach, azimuth, diameter/width, long left, tran left, defect type, radial offset
+3 1 1 1
+0 10 0 0 0 1
+15.555555555556
+TYPE='STRUCT FILE' VERSION='13' UNITS='INTERNAL' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+
+
+
+32.200000 2.600000 0.000000
+59
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+-3 2 0 'CA1-1X' 'INL_A1-L-1.1' 'INL_A1-L-1.1' 0 1.571 -1000.000 0 0.000000
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+-5 5.09999999999999 0 'CA2-1X' 'INL_A2-L-1.1' 'INL_A2-L-1.1' 0 1.571 -1000.000 0 0.000000
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+-2.2 5.09999999999999 0 'CA2-3P' 'INL_A2-L-2.1' 'INL_A2-L-2.1' 0 1.571 -1000.000 0 0.000000
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+-3 8.2 0 'CA3-1X' 'INL_A3-L-1.1' 'INL_A3-L-1.1' 0 1.571 -1000.000 0 0.000000
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+3 2 0 'CA1-1P' 'INL_A1-R-1.1' 'INL_A1-R-1.1' 0 1.571 -1000.000 0 0.000000
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+3.3 5.09999999999999 0 'CA2-2P' 'INL_A2-R-2.1' 'INL_A2-R-2.1' 0 1.571 -1000.000 0 0.000000
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+3 8.2 0 'CA3-1P' 'INL_A3-R-1.1' 'INL_A3-R-1.1' 0 1.571 -1000.000 0 0.000000
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'S' 'N' 'N' 1 1
+20.000000 0.100000 0.200000 0.000000 0.000000 0
+6.53589793076277e-08 0 0.199999999999989 'G1-1.1:O' 'INL_G1-1.1' 'INL_G1-1.1' 0 1.571 -1000.000 0 0.000000
+'' 'N' 'N' 'N' 0 0
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+-3 2 0 'CA1-1X' 'INL_A1-L-1.2' 'INL_A1-L-1.2' 0 4.712 -1000.000 0 0.000000
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+-5 5.09999999999999 0 'CA2-1X' 'INL_A2-L-1.2' 'INL_A2-L-1.2' 0 4.712 -1000.000 0 0.000000
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+-2.2 5.09999999999999 0 'CA2-3P' 'INL_A2-L-2.2' 'INL_A2-L-2.2' 0 4.712 -1000.000 0 0.000000
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+-3 8.2 0 'CA3-1X' 'INL_A3-L-1.2' 'INL_A3-L-1.2' 0 4.712 -1000.000 0 0.000000
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+3 2 0 'CA1-1P' 'INL_A1-R-1.2' 'INL_A1-R-1.2' 0 4.712 -1000.000 0 0.000000
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+5 5.09999999999999 0 'CA2-1P' 'INL_A2-R-1.2' 'INL_A2-R-1.2' 0 4.712 -1000.000 0 0.000000
+'' 'S' 'N' 'N' 1 1
+600.000000 0.100000 1.000000 0.000000 0.000000 0
+3 8.2 0 'CA3-1P' 'INL_A3-R-1.2' 'INL_A3-R-1.2' 0 4.712 -1000.000 0 0.000000
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'S' 'N' 'N' 1 1
+20.000000 0.100000 0.200000 0.000000 0.000000 0
+3.92306201625124e-09 0 -0.2 'G1-1.2:O' 'INL_G1-1.2' 'INL_G1-1.2' 0 4.712 -1000.000 0 0.000000
+A 'C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+pls_pole.exe
+pls_pole.exe
+0 0 0 0
+
+
+1 0 1 0
+1
+'CA' 'C-32.2' 34.800000 2.600000 139017.481934 'CA:g' 13 0.000000 0.000000 0.600000 '' 0.000000 0.585057 ''
+5000.000000 0.000000 139017.481934 8440.000000
+TYPE='PRT FILE' VERSION='4' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME=''
+0 0 13; total number of columns (including user defined columns), sort column, and number of protected columns
+0 1 0 ; number of parts, assemblies, and resolve-list items
+2 0
+ACC-200
+6 1 0
+Anc.
+14 1 0
+0 0
+0; number of custom counting units
+TYPE='PLT FILE' VERSION='4.4' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME=''
+
+48 31 1 1 0 0 20
+21 ; # shapes for each shape shape index, # points, x,y for each point
+1 2
+0.000000 0.000000 
+-1.000000 1.000000 
+2 4
+-1.000000 -1.000000 1.000000 1.000000 
+1.000000 -1.000000 -1.000000 1.000000 
+3 4
+-1.000000 -1.000000 1.000000 1.000000 
+1.000000 -1.000000 -1.000000 1.000000 
+4 6
+-0.577300 -1.154700 -0.577300 0.577300 1.154700 0.577300 
+1.000000 -0.000000 -1.000000 -1.000000 0.000000 1.000000 
+5 8
+-0.414210 -1.000000 -1.000000 -0.414210 0.414210 1.000000 1.000000 0.414210 
+1.000000 0.414210 -0.414210 -1.000000 -1.000000 -0.414210 0.414210 1.000000 
+6 12
+-0.267950 -0.732050 -1.000000 -1.000000 -0.732050 -0.267950 0.267950 0.732050 1.000000 1.000000 0.732050 0.267950 
+1.000000 0.732050 0.267950 -0.267950 -0.732050 -1.000000 -1.000000 -0.732050 -0.267950 0.267950 0.732050 1.000000 
+7 16
+-0.198900 -0.566500 -0.847700 -1.000000 -1.000000 -0.847700 -0.566500 -0.198900 0.198900 0.566500 0.847700 1.000000 1.000000 0.847700 0.566500 0.198900 
+1.000000 0.847700 0.566500 0.198900 -0.198900 -0.566500 -0.847700 -1.000000 -1.000000 -0.847700 -0.566500 -0.198900 0.198900 0.566500 0.847700 1.000000 
+8 4
+-1.414000 0.000000 1.414000 0.000000 
+-0.000000 -1.414000 0.000000 1.414000 
+9 6
+-1.000000 -1.000000 0.000000 1.000000 1.000000 0.000000 
+0.577300 -0.577300 -1.154700 -0.577300 0.577300 1.154700 
+10 8
+-0.765370 -1.082390 -0.765370 0.000000 0.765370 1.082390 0.765370 0.000000 
+0.765370 -0.000000 -0.765370 -1.082390 -0.765370 0.000000 0.765370 1.082390 
+11 12
+-0.517640 -0.896570 -1.035280 -0.896570 -0.517640 0.000000 0.517640 0.896570 1.035280 0.896570 0.517640 0.000000 
+0.896570 0.517640 -0.000000 -0.517640 -0.896570 -1.035280 -0.896570 -0.517640 0.000000 0.517640 0.896570 1.035280 
+12 16
+-0.390180 -0.720960 -0.941980 -1.019590 -0.941980 -0.720960 -0.390180 0.000000 0.390180 0.720960 0.941980 1.019590 0.941980 0.720960 0.390180 0.000000 
+0.941980 0.720960 0.390180 -0.000000 -0.390180 -0.720960 -0.941980 -1.019590 -0.941980 -0.720960 -0.390180 0.000000 0.390180 0.720960 0.941980 1.019590 
+13 12
+-0.223500 -0.654310 -1.000000 -1.000000 -0.654310 -0.223500 0.223500 0.654310 1.000000 1.000000 0.654310 0.223500 
+0.626070 0.506870 0.223500 -0.223500 -0.506870 -0.626070 -0.626070 -0.506870 -0.223500 0.223500 0.506870 0.626070 
+14 12
+-0.223500 -0.506870 -0.626070 -0.626070 -0.506870 -0.223500 0.223500 0.506870 0.626070 0.626070 0.506870 0.223500 
+1.000000 0.654310 0.223500 -0.223500 -0.654310 -1.000000 -1.000000 -0.654310 -0.223500 0.223500 0.654310 1.000000 
+15 12
+-0.229880 -0.667530 -1.000000 -1.000000 -0.667530 -0.229880 0.229880 0.667530 1.000000 1.000000 0.667530 0.229880 
+0.688330 0.547440 0.229880 -0.229880 -0.547440 -0.688330 -0.688330 -0.547440 -0.229880 0.229880 0.547440 0.688330 
+16 12
+-0.229880 -0.547450 -0.688330 -0.688330 -0.547450 -0.229880 0.229880 0.547450 0.688330 0.688330 0.547450 0.229880 
+1.000000 0.667530 0.229880 -0.229880 -0.667530 -1.000000 -1.000000 -0.667530 -0.229880 0.229880 0.667530 1.000000 
+17 12
+-0.238590 -0.684430 -1.000000 -1.000000 -0.684430 -0.238590 0.238590 0.684430 1.000000 1.000000 0.684430 0.238590 
+0.766420 0.596470 0.238570 -0.238570 -0.596470 -0.766420 -0.766420 -0.596470 -0.238570 0.238570 0.596470 0.766420 
+18 12
+-0.238570 -0.596470 -0.766420 -0.766420 -0.596470 -0.238570 0.238570 0.596470 0.766420 0.766420 0.596470 0.238570 
+1.000000 0.684430 0.238590 -0.238590 -0.684430 -1.000000 -1.000000 -0.684430 -0.238590 0.238590 0.684430 1.000000 
+19 18
+-0.342020 -0.642790 -0.866020 -0.984810 -0.984810 -0.866020 -0.642790 -0.342020 0.000000 0.342020 0.642790 0.866020 0.984810 0.984810 0.866020 0.642790 0.342020 0.000000 
+0.939690 0.766040 0.500000 0.173650 -0.173650 -0.500000 -0.766040 -0.939690 -1.000000 -0.939690 -0.766040 -0.500000 -0.173650 0.173650 0.500000 0.766040 0.939690 1.000000 
+20 4
+-1.000000 -1.000000 1.000000 1.000000 
+1.000000 -1.000000 -1.000000 1.000000 
+148 4
+-0.666667 -0.666667 0.666667 0.666667 
+1.000000 -1.000000 -1.000000 1.000000 
+Undeformed Geometry
+1 32 'CA3-1P' ''
+2 32 'CA2-1P' ''
+3 32 'CA2-2P' ''
+4 32 'CA2-3P' ''
+5 32 'CA1-1P' ''
+6 544 'CA3-1X' ''
+7 544 'CA2-1X' ''
+8 544 'CA1-1X' ''
+9 144 'CA:g' ''
+10 32 'CA:t' ''
+11 32 'CA:1' ''
+12 32 'CA:2' ''
+13 32 'CA:3' ''
+14 0 '' ''
+15 0 '' ''
+16 0 '' ''
+17 2 '' 'CA:3'
+18 2 '' 'CA3-1P'
+19 2 '' 'CA:1'
+20 2 '' 'CA1-1P'
+21 2 '' 'CA:3'
+22 514 '' 'CA3-1X'
+23 2 '' 'CA:1'
+24 514 '' 'CA1-1X'
+25 2 '' 'CA:2'
+26 2 '' 'CA2-2P'
+27 2 '' 'CA2-1P'
+28 2 '' 'CA:2'
+29 2 '' 'CA2-3P'
+30 514 '' 'CA2-1X'
+31 4 'G1-1.1:O' 'CA:t'
+32 4 'G1-1.2:O' 'CA:t'
+33 6619200 'INL_A1-R-1.1' ''
+34 11862080 'INL_A1-R-1.2' ''
+35 12124224 'INL_A2-R-1.2' ''
+36 6881344 'INL_A2-R-2.1' ''
+37 7143488 'INL_A3-R-1.1' ''
+38 12386368 'INL_A3-R-1.2' ''
+39 5570624 'INL_A1-L-1.1' ''
+40 10813504 'INL_A1-L-1.2' ''
+41 5832768 'INL_A2-L-1.1' ''
+42 11075648 'INL_A2-L-1.2' ''
+43 6094912 'INL_A2-L-2.1' ''
+44 11337792 'INL_A2-L-2.2' ''
+45 6357056 'INL_A3-L-1.1' ''
+46 11599936 'INL_A3-L-1.2' ''
+47 10289216 'INL_G1-1.1' ''
+48 15532096 'INL_G1-1.2' ''
+10 11 1 218138690 'Beam' -1 0 'CA' 1 1 0.2 0.20574713 0 16711680 0 0 0 0.114300 0.115760 '' ''
+11 12 2 218138626 'Beam' -1 0 'CA' 1 1 0.20574713 0.21465517 0 16711680 0 0 0 0.115760 0.118022 '' ''
+12 13 3 218138626 'Beam' -1 0 'CA' 1 1 0.21465517 0.22356322 0 16711680 0 0 0 0.118022 0.120285 '' ''
+13 14 4 218138626 'Beam' -1 0 'CA' 1 1 0.22356322 0.25229885 0 16711680 0 0 0 0.120285 0.127584 '' ''
+14 15 5 218138626 'Beam' -1 0 'CA' 1 1 0.25229885 0.27241379 0 16711680 0 0 0 0.127584 0.132693 '' ''
+15 9 6 218138754 'Beam' -1 0 'CA' 1 1 0.27241379 0.29252874 0 16711680 0 0 0 0.132693 0.137802 '' ''
+9 16 7 218155170 'Beam' -1 0 'CA' 1 1 0.29252874 0.3 0 16711680 0 0 0 0.137802 0.139700 '' ''
+17 18 8 251954370 'Beam' -1 0 'Cru-Ir' 148 148 0.15 0.15 0 16711680 0 0 0 '' ''
+19 20 9 251954370 'Beam' -1 0 'Cru-Sr' 148 148 0.15 0.15 0 16711680 0 0 0 '' ''
+21 22 10 251954370 'Beam' -1 0 'Cru-Il' 148 148 0.15 0.15 0 16711680 0 0 0 '' ''
+23 24 11 251954370 'Beam' -1 0 'Cru-Sl' 148 148 0.15 0.15 0 16711680 0 0 0 '' ''
+25 26 12 251954242 'Beam' -1 0 'Cru-Mr' 148 148 0.15 0.15 0 16711680 0 0 0 '' ''
+26 27 13 251954306 'Beam' -1 0 'Cru-Mr' 148 148 0.15 0.15 0 16711680 0 0 0 '' ''
+28 29 14 251954242 'Beam' -1 0 'Cru-ML' 148 148 0.15 0.15 0 16711680 0 0 0 '' ''
+29 30 15 251954306 'Beam' -1 0 'Cru-ML' 148 148 0.15 0.15 0 16711680 0 0 0 '' ''
+5 33 16 436207625 'Strain' -1 0 'A1-R-1.1' 0 0 0 0 0 16711680 1 1 1 '' ''
+5 34 17 436207625 'Strain' -1 0 'A1-R-1.2' 0 0 0 0 0 16711680 1 1 1 '' ''
+2 35 18 436207625 'Strain' -1 0 'A2-R-1.2' 0 0 0 0 0 16711680 1 1 1 '' ''
+3 36 19 436207625 'Strain' -1 0 'A2-R-2.1' 0 0 0 0 0 16711680 1 1 1 '' ''
+1 37 20 436207625 'Strain' -1 0 'A3-R-1.1' 0 0 0 0 0 16711680 1 1 1 '' ''
+1 38 21 436207625 'Strain' -1 0 'A3-R-1.2' 0 0 0 0 0 16711680 1 1 1 '' ''
+8 39 22 436207625 'Strain' -1 0 'A1-L-1.1' 0 0 0 0 0 16711680 1 1 1 '' ''
+8 40 23 436207625 'Strain' -1 0 'A1-L-1.2' 0 0 0 0 0 16711680 1 1 1 '' ''
+7 41 24 436207625 'Strain' -1 0 'A2-L-1.1' 0 0 0 0 0 16711680 1 1 1 '' ''
+7 42 25 436207625 'Strain' -1 0 'A2-L-1.2' 0 0 0 0 0 16711680 1 1 1 '' ''
+4 43 26 436207625 'Strain' -1 0 'A2-L-2.1' 0 0 0 0 0 16711680 1 1 1 '' ''
+4 44 27 436207625 'Strain' -1 0 'A2-L-2.2' 0 0 0 0 0 16711680 1 1 1 '' ''
+6 45 28 436207625 'Strain' -1 0 'A3-L-1.1' 0 0 0 0 0 16711680 1 1 1 '' ''
+6 46 29 436207625 'Strain' -1 0 'A3-L-1.2' 0 0 0 0 0 16711680 1 1 1 '' ''
+31 47 30 436207625 'Strain' -1 0 'G1-1.1' 0 0 0 0 0 16711680 1 1 1 '' ''
+32 48 31 436207625 'Strain' -1 0 'G1-1.2' 0 0 0 0 0 16711680 1 1 1 '' ''
+0 3.00 25.00
+0 5.00 28.10
+0 3.30 28.10
+0 -2.20 28.10
+0 3.00 31.20
+0 -3.00 25.00
+0 -5.00 28.10
+0 -3.00 31.20
+0 0 0
+34.20 1.80 34.20
+0 0 30.2
+0 0 25.00
+0 0 24
+0 0 14
+0 0 28.10
+0 0 -2.6
+0 0 24
+0 3 24
+0 0 30.2
+0 3 30.2
+0 0 24
+0 -3 24
+0 0 30.2
+0 -3 30.2
+0 0 27.1
+0 2.2 27.1
+0 5 27.1
+0 0 27.1
+0 -2.2 27.1
+0 -5 27.1
+0.2 6.5358979e-08 32.2
+-0.2 3.923062e-09 32.2
+1 3 30.2
+-1 3 30.2
+-1 5 27.1
+1 3.3 27.1
+1 3 24
+-1 3 24
+1 -3 30.2
+-1 -3 30.2
+1 -3 27.1
+-1 -5 27.1
+1 -2.2 27.1
+-1 -2.2 27.1
+1 -3 24
+-1 -3 24
+0.4 1.3071796e-07 32.2
+-0.4 7.846124e-09 32.2
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+TYPE='DXF ATTACHMENTS' VERSION='5' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+0 ; number dxf files attached
+TYPE='BMP ATTACHMENTS' VERSION='7' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+0 1.000000 ; number bmp files attached, minimum pixel size
+TYPE='ANNOTATION' VERSION='8' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+0 ; Number annotation records
+-1 -1 -1 -1 -1 0 -1 -1 -1 0 '' 0
+''
+''
+'' ''
+TYPE='ANNOTATION' VERSION='8' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+2 ; Number annotation records
+5 37.17140 22.64240 0.00000 0 -1 2.54 0 0 0 0 1 0 0 1 'Project\n%n\n%desc\n%notes'
+4 91.25000 95.70000 0.00000 0 -1 0.508 0 0 0 0 0 0 0 0 'Page %p of %q'
+-1 -1 -1 -1 -1 0 -1 -1 -1 0 '' 0
+''
+''
+'' ''
+TYPE='XARM PROPERTIES FILE' VERSION='11' UNITS='INTERNAL' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.xrm'
+4
+'CROSSARM-3' 'ACC-200' 1         0.06      0.00125      7.2e-05          800          0.3            3            1 210000000000      3000000      3000000      3000000            0            0            0          0.2 0 0
+0
+'CROSSARM-3' 'ACC-200' 1         0.06      0.00125      7.2e-05          900          0.3            3            1 210000000000      3000000      3000000      3000000            0            0            0          0.2 0 0
+0
+TYPE='Insulator Library' VERSION='11' UNITS='INTERNAL' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME=''
+CClampProperties
+0 ; label, stock #, holding cap
+CStrainProperties
+2 ; label, stock #, tension cap, length, wind area, weight, E L, E R
+'STRAIN' 'Anc.' 120000.00000000 1.00000000 0.10000000 600.00000000 0.00000000 0.00000000
+'' 0 120000.00000000
+'EW' '' 120000.00000000 0.20000000 0.10000000 20.00000000 0.00000000 0.00000000
+'' 0 120000.00000000
+CSuspensionProperties
+0 ; label, stock #, tension cap, length, wind area, weight, Top w h, Bot w h, Vert w h
+C2PartProperties
+0 ; label, stock #, left,right length, left,right wind area, left,right, weight, left,right,comp cap, left,right tens cap
+CPostProperties
+0 ; label, stock #, has brace, horz dist, vert dist, vert up cap, vert down cap, axial comp cap, axial ten cap, long cap, weight, long, vert stiff
+CGuyStrainProperties
+0 ; label, stock #, Tension cap
+TYPE='CPOLE DIMS FILE' VERSION='9' UNITS='INTERNAL' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.cpp'
+1
+'C-32.2' '' '180' 1 5         34.8          2.6          0.6          0.4            0       0.1397       0.1143          0.9  41368000000  13789000000        26635            0            0            0            0            0            0            0
+0 ; # Capacities
+TYPE='STRUCTURE SHEETS' VERSION='2' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+0  86.3600 55.8800  1 0 2 0 0 1.270000
+TYPE='INSET STRUCT VIEWS' VERSION='3.2' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+4 ; number of inset views
+0  55.0000 95.0000 10.0000 85.0000  0.0000 0.0000 0.0000  70.0000 120.0000  0.6000 ''  70.0000 120.0000  0.0000 0.0000 0.0000
+36.5760 1 0
+Isometric
+1 0  1  36.5760 36.5760  2 5 0 0
+C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol
+TYPE='ANNOTATION' VERSION='8' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+0 ; Number annotation records
+-1 -1 -1 -1 -1 0 -1 -1 -1 0 '' 0
+''
+''
+'' ''
+0  8.0000 38.0000 4.0000 25.0000  0.0000 0.0000 0.0000  0.0000 90.0000  0.6000 ''  0.0000 90.0000  0.0000 0.0000 0.0000
+36.5760 4 0
+Plan
+1 1  1  36.5760 36.5760  2 5 0 0
+C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol
+TYPE='ANNOTATION' VERSION='8' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+0 ; Number annotation records
+-1 -1 -1 -1 -1 0 -1 -1 -1 0 '' 0
+''
+''
+'' ''
+0  8.0000 38.0000 30.0000 85.0000  0.0000 0.0000 0.0000  90.0000 90.0000  0.6000 ''  90.0000 90.0000  0.0000 0.0000 0.0000
+36.5760 4 0
+Longitudinal
+1 1  1  36.5760 36.5760  2 5 0 0
+C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol
+TYPE='ANNOTATION' VERSION='8' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+0 ; Number annotation records
+-1 -1 -1 -1 -1 0 -1 -1 -1 0 '' 0
+''
+''
+'' ''
+0  40.0000 55.0000 30.0000 85.0000  0.0000 0.0000 0.0000  90.0000 0.0000  0.6000 ''  90.0000 0.0000  0.0000 0.0000 0.0000
+36.5760 4 0
+Transverse
+1 1  1  36.5760 36.5760  2 5 0 0
+C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol
+TYPE='ANNOTATION' VERSION='8' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+0 ; Number annotation records
+-1 -1 -1 -1 -1 0 -1 -1 -1 0 '' 0
+''
+''
+'' ''
+TYPE='INSET REPORT VIEWS' VERSION='1' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+0 ; number of inset views
+0 0 0 0 0   0.3175 0 0 0 0  '' '' 'Annotation' 'Annotation'
+0 0 0 0 0   0 0 0 0 16777215  '' '' 'Inset Report Lines' 'Inset Report Lines'
+0 0 0 0 0   0 0 0 0 16777215  '' '' 'Inset Report Text' 'Inset Report Text'
+0 0 0 0 0   0.3175 0 0 0 0  '' '' 'Sheet Border' 'Sheet Border'
+0 0 0 0 0   0.8382 0 0 0 0  '' '' 'Inset View' 'Inset View'
+0 0 0 0 0   0.3175 0 0 0 0  '' '' 'Structure Inset View' 'Structure Inset View'
+TYPE='RTF FILE' VERSION='1' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\Hackathlon 07-2025\PLSCADD\Structures\Poles\prueba\Reduciendo los joints\Prueba n46 original.pol'
+{\rtf1\ansi\ansicpg1252\deff0\deflang3082{\fonttbl{\f0\fmodern\fprq1\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 PLS-POLE Version 20.01x64    12:15:03 mi\'e9rcoles, 25 de junio de 2025\par
+Axpo Grid AG - Switzerland\par
+\par
+Insert your notes, comments, pictures, etc. here.  You can also check the\par
+"Enable Automatic Project Revision Tracking" option in the General Data dialog\par
+and the program will automatically append a list of changes made to this model\par
+to the end of this report.  This report is automatically saved whenever you save\par
+your project.\par
+\par
+}
+ 
