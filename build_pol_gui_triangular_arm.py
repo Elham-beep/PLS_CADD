@@ -346,10 +346,6 @@ _TOKEN_RE = re.compile(r"\b(firstA|secondA|thirdA|midA|midB|beamNo|HA|HB|HC|HD|H
 # whole-word match of the   first   second   third  tokens
 _PLACE_RE = re.compile(r"\b(firstA|secondA|thirdA|midA|midB|beamNo|HA|HB|HC|HD|H0|HG)\b")
 
-import re
-
-# matches the placeholder words even when embedded in other text
-_PLACE_RE = re.compile(r"\b(firstA|secondA|thirdA|midA|midB|beamNo|HA|HB|HC|HD|H0|HG)\b")
 
 def _swap_placeholders(lines: list[str], v: dict[str, float]) -> None:
     """
@@ -370,31 +366,30 @@ def _swap_placeholders(lines: list[str], v: dict[str, float]) -> None:
         "CA3_1p", "CA3_1x",
         "CA2_1p", "CA2_1x",
         "CA1_1p", "CA1_1x") if v[t] != 0}
-
     repl = {
-    # outer half-arm lengths ─ now in the right order
-    "firstA":  f"{abs(v['CA1_1p']):g}",   # CA-3  (bottom)
-    "secondA": f"{abs(v['CA2_1p']):g}",   # CA-2  (middle)
-    "thirdA":  f"{abs(v['CA3_1p']):g}",   # CA-1  (top arm)
+        # outer half-arm lengths ─ top → bottom
+        "firstA":  f"{abs(v['CA1_1p']):g}",   # CA1 (top)
+        "secondA": f"{abs(v['CA2_1p']):g}",   # CA2 (middle)
+        "thirdA":  f"{abs(v['CA3_1p']):g}",   # CA3 (bottom)
 
-    "midA":    f"{abs(v['CA2_2p']):g}",   # stays the same
-    "midB":    f"{abs(v['CA2_3p']):g}",
+        "midA":    f"{abs(v['CA2_2p']):g}",
+        "midB":    f"{abs(v['CA2_3p']):g}",
 
-    # token that holds the count of unique half-arms
-    "beamNo":  str(len({abs(v[t]) for t in (
-                       'CA1_1p','CA1_1x',
-                       'CA2_1p','CA2_1x',
-                       'CA3_1p','CA3_1x')
-                       if v[t] != 0})),
+        "beamNo":  str(len({abs(v[t]) for t in (
+                            'CA1_1p','CA1_1x',
+                            'CA2_1p','CA2_1x',
+                            'CA3_1p','CA3_1x')
+                            if v[t] != 0})),
 
-    # height tokens (already correct)
-    "HA": f"{v['CA1']:g}",   # top-arm height
-    "HB": f"{v['CA2']:g}",   # middle-arm height
-    "HC": f"{v['CA3']:g}",   # bottom-arm height
-    "HD": f"{v['EW1']:g}",
-    "H0": f"{v['UG']:g}",
-    "HG": f"{v['EW1'] + v['UG']:g}",
-}
+        # height tokens (already top→bottom via HA/HB/HC)
+        "HA": f"{v['CA1']:g}",   # top-arm height
+        "HB": f"{v['CA2']:g}",   # middle-arm height
+        "HC": f"{v['CA3']:g}",   # bottom-arm height
+        "HD": f"{v['EW1']:g}",
+        "H0": f"{v['UG']:g}",
+        "HG": f"{v['EW1'] + v['UG']:g}",
+    }
+    print("DEBUG mapping:", {k: repl[k] for k in ("firstA","secondA","thirdA")})
 
 
     def _sub(m: re.Match) -> str:
@@ -402,6 +397,7 @@ def _swap_placeholders(lines: list[str], v: dict[str, float]) -> None:
 
     for i, ln in enumerate(lines):
         if _PLACE_RE.search(ln):
+            print("DEBUG placeholder line:", i, repr(ln))
             lines[i] = _PLACE_RE.sub(_sub, ln)
 
 
