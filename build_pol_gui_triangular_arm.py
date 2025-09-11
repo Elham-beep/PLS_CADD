@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+this code works by the time: 11/9/2025 to create triangular cross-arms
 Tkinter front-end that:
   • lets the designer key in cross-arm data
   • scans the template .POL for every joint-geometry line + the 8-row
