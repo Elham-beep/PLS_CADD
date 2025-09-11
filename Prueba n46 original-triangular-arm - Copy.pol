@@ -9,7 +9,7 @@ TYPE='PLS_POLE INPUT FILE' VERSION='22' UNITS='INTERNAL' SOURCE='PLS-POLE Versio
 5 ; Joints Geometry: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
 'CA3-1'
 0 0 0 0 0 0
-0 firstA HA 0
+0 thirdA HC 0
 0 1 0
 '' '' 0 0 0 0
 'CA2-1'
@@ -29,7 +29,7 @@ TYPE='PLS_POLE INPUT FILE' VERSION='22' UNITS='INTERNAL' SOURCE='PLS-POLE Versio
 '' '' 0 0 0 0
 'CA1-1'
 0 0 0 0 0 0
-0 thirdA HC 0
+0 firstA HA 0
 0 1 0
 '' '' 0 0 0 0
 
@@ -70,39 +70,39 @@ C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES
 Cru-Ir
 
 
-CROSSARM-firstA
+CROSSARM-thirdA
 0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
            0            0            0
 2
 'Cru-Ir:O' 'CA:3'            0 1
-'Cru-Ir:E' 'CA3-1P'            firstA 2
+'Cru-Ir:E' 'CA3-1P'            thirdA 2
 Cru-Sr
-
-
-CROSSARM-thirdA
-0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
-           0            0 4.71238898038
-2
-'Cru-Sr:O' 'CA:1'            0 1
-'Cru-Sr:E' 'CA1-1P'            thirdA 2
-Cru-Il
 
 
 CROSSARM-firstA
 0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
            0            0 4.71238898038
 2
-'Cru-Il:O' 'CA:3'            0 1
-'Cru-Il:E' 'CA3-1X'            firstA 2
-Cru-Sl
+'Cru-Sr:O' 'CA:1'            0 1
+'Cru-Sr:E' 'CA1-1P'            firstA 2
+Cru-Il
 
 
 CROSSARM-thirdA
 0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
            0            0 4.71238898038
 2
+'Cru-Il:O' 'CA:3'            0 1
+'Cru-Il:E' 'CA3-1X'            thirdA 2
+Cru-Sl
+
+
+CROSSARM-firstA
+0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
+           0            0 4.71238898038
+2
 'Cru-Sl:O' 'CA:1'            0 1
-'Cru-Sl:E' 'CA1-1X'            thirdA 2
+'Cru-Sl:E' 'CA1-1X'            firstA 2
 Cru-Mr
 
 
@@ -140,8 +140,8 @@ CROSSARM-thirdA
 0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction 
            0 -0.0523598775598 4.71238898038 
 2 
-'Cru-Ir2:O' ''            0 2 
-'Cru-Ir2:E' 'CA3-1P'            3 2 
+'Cru-Ir2 :O' ''            0 2 
+'Cru-Ir2 :E' 'CA3-1P'           thirdA 2 
 Cru-Sr2 
 
  
@@ -149,8 +149,8 @@ CROSSARM-firstA
 0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction 
            0 -0.0523598775598 4.71238898038 
 2 
-'Cru-Sr2:O' ''            0 2 
-'Cru-Sr2:E' 'CA1-1P'            3 2 
+'Cru-Sr2 :O' ''            0 2 
+'Cru-Sr2 :E' 'CA1-1P'           firstA 2 
 Cru-Il2 
 
  
@@ -158,8 +158,8 @@ CROSSARM-thirdA
 0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction 
 3.14159265359 -0.0523598775598 4.71238898038 
 2 
-'Cru-Il2:O' ''            0 2 
-'Cru-Il2:E' 'CA3-1X'            3 2 
+'Cru-Il2 :O' ''            0 2 
+'Cru-Il2 :E' 'CA3-1X'           thirdA 2 
 Cru-Sl2 
 
  
@@ -167,8 +167,8 @@ CROSSARM-firstA
 0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction 
 3.14159265359 -0.0523598775598 4.71238898038 
 2 
-'Cru-Sl2:O' ''            0 2 
-'Cru-Sl2:E' 'CA1-1X'            3 2 
+'Cru-Sl2 :O' ''            0 2 
+'Cru-Sl2 :E' 'CA1-1X'           firstA 2 
 Cru-Mr2 
 
  
@@ -176,8 +176,8 @@ CROSSARM-secondA
 0 ; Attachment Labels and Holes Relative to: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction 
            0 -0.0523598775598 4.71238898038 
 2 
-'Cru-Mr2:O' ''            0 2 
-'Cru-Mr2:E' 'CA2-1P'            5 2 
+'Cru-Mr2 :O' ''            0 2 
+'Cru-Mr2 :E' 'CA2-1P'           secondA 2 
 Cru-ML2 
 
  
@@ -186,7 +186,7 @@ CROSSARM-secondA
 3.14159265359 -0.0523598775598 4.71238898038 
 2 
 'Cru-ML2:O' ''            0 2 
-'Cru-ML2:E' 'CA2-1X'            5 2 
+'Cru-ML2:E' 'CA2-1X'           secondA 2 
 C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.xtm
 0 ; Tubular X-Arm Connectivity: label\n origin\n joint\n property 
 C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.eqp
@@ -270,7 +270,7 @@ C-HD
 3 ; Relative Attachment Labels for: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
 'CA:3'
 0 0 0 0 0 0
-0 0 0 HA
+0 0 0 HC
 0 0 0
 '' '' 0 0 0 0
 'CA:2'
@@ -280,7 +280,7 @@ C-HD
 '' '' 0 0 0 0
 'CA:1'
 0 0 0 0 0 0
-0 0 0 HC
+0 0 0 HA
 0 0 0
 '' '' 0 0 0 0
            0            0            0            0            0
@@ -334,25 +334,25 @@ HD H0 0.000000
 '' 'N' 'N' 'N' 0 0
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
--thirdA 2 0 'CA1-1X' 'INL_A1-L-1.1' 'INL_A1-L-1.1' 0 1.571 -1000.000 0 0.000000
+-firstA 2 0 'CA1-1X' 'INL_A1-L-1.1' 'INL_A1-L-1.1' 0 1.571 -1000.000 0 0.000000
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
--secondA 5.09999999999999 0 'CA2-1X' 'INL_A2-L-1.1' 'INL_A2-L-1.1' 0 1.571 -1000.000 0 0.000000
+-secondA 4 0 'CA2-1X' 'INL_A2-L-1.1' 'INL_A2-L-1.1' 0 1.571 -1000.000 0 0.000000
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
--midB 5.09999999999999 0 'CA2-3P' 'INL_A2-L-2.1' 'INL_A2-L-2.1' 0 1.571 -1000.000 0 0.000000
+-midB 4 0 'CA2-3P' 'INL_A2-L-2.1' 'INL_A2-L-2.1' 0 1.571 -1000.000 0 0.000000
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
--firstA 8.2 0 'CA3-1X' 'INL_A3-L-1.1' 'INL_A3-L-1.1' 0 1.571 -1000.000 0 0.000000
+-thirdA 7 0 'CA3-1X' 'INL_A3-L-1.1' 'INL_A3-L-1.1' 0 1.571 -1000.000 0 0.000000
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
-thirdA 2 0 'CA1-1P' 'INL_A1-R-1.1' 'INL_A1-R-1.1' 0 1.571 -1000.000 0 0.000000
+firstA 2 0 'CA1-1P' 'INL_A1-R-1.1' 'INL_A1-R-1.1' 0 1.571 -1000.000 0 0.000000
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
-midA 5.09999999999999 0 'CA2-2P' 'INL_A2-R-2.1' 'INL_A2-R-2.1' 0 1.571 -1000.000 0 0.000000
+midA 4 0 'CA2-2P' 'INL_A2-R-2.1' 'INL_A2-R-2.1' 0 1.571 -1000.000 0 0.000000
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
-firstA 8.2 0 'CA3-1P' 'INL_A3-R-1.1' 'INL_A3-R-1.1' 0 1.571 -1000.000 0 0.000000
+thirdA 7 0 'CA3-1P' 'INL_A3-R-1.1' 'INL_A3-R-1.1' 0 1.571 -1000.000 0 0.000000
 '' 'N' 'N' 'N' 0 0
 '' 'N' 'N' 'N' 0 0
 '' 'N' 'N' 'N' 0 0
@@ -370,25 +370,25 @@ firstA 8.2 0 'CA3-1P' 'INL_A3-R-1.1' 'INL_A3-R-1.1' 0 1.571 -1000.000 0 0.000000
 '' 'N' 'N' 'N' 0 0
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
--thirdA 2 0 'CA1-1X' 'INL_A1-L-1.2' 'INL_A1-L-1.2' 0 4.712 -1000.000 0 0.000000
+-firstA 2 0 'CA1-1X' 'INL_A1-L-1.2' 'INL_A1-L-1.2' 0 4.712 -1000.000 0 0.000000
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
--secondA 5.09999999999999 0 'CA2-1X' 'INL_A2-L-1.2' 'INL_A2-L-1.2' 0 4.712 -1000.000 0 0.000000
+-secondA 4 0 'CA2-1X' 'INL_A2-L-1.2' 'INL_A2-L-1.2' 0 4.712 -1000.000 0 0.000000
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
--midB 5.09999999999999 0 'CA2-3P' 'INL_A2-L-2.2' 'INL_A2-L-2.2' 0 4.712 -1000.000 0 0.000000
+-midB 4 0 'CA2-3P' 'INL_A2-L-2.2' 'INL_A2-L-2.2' 0 4.712 -1000.000 0 0.000000
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
--firstA 8.2 0 'CA3-1X' 'INL_A3-L-1.2' 'INL_A3-L-1.2' 0 4.712 -1000.000 0 0.000000
+-thirdA 7 0 'CA3-1X' 'INL_A3-L-1.2' 'INL_A3-L-1.2' 0 4.712 -1000.000 0 0.000000
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
-thirdA 2 0 'CA1-1P' 'INL_A1-R-1.2' 'INL_A1-R-1.2' 0 4.712 -1000.000 0 0.000000
+firstA 2 0 'CA1-1P' 'INL_A1-R-1.2' 'INL_A1-R-1.2' 0 4.712 -1000.000 0 0.000000
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
-secondA 5.09999999999999 0 'CA2-1P' 'INL_A2-R-1.2' 'INL_A2-R-1.2' 0 4.712 -1000.000 0 0.000000
+secondA 4 0 'CA2-1P' 'INL_A2-R-1.2' 'INL_A2-R-1.2' 0 4.712 -1000.000 0 0.000000
 '' 'S' 'N' 'N' 1 1
 600.000000 0.100000 1.500000 0.000000 0.000000 0
-firstA 8.2 0 'CA3-1P' 'INL_A3-R-1.2' 'INL_A3-R-1.2' 0 4.712 -1000.000 0 0.000000
+thirdA 7 0 'CA3-1P' 'INL_A3-R-1.2' 'INL_A3-R-1.2' 0 4.712 -1000.000 0 0.000000
 '' 'N' 'N' 'N' 0 0
 '' 'N' 'N' 'N' 0 0
 '' 'N' 'N' 'N' 0 0
@@ -411,7 +411,7 @@ pls_pole.exe
 
 1 0 1 0
 1
-'CA' 'C-HD' 34.800000 2.600000 139017.481934 'CA:g' 13 0.000000 0.000000 0.600000 '' 0.000000 0.585057 ''
+'CA' 'C-HD' HG 2.600000 139017.481934 'CA:g' 13 0.000000 0.000000 0.600000 '' 0.000000 0.585057 ''
 10000.000000 0.000000 139017.481934 8440.000000
 TYPE='PRT FILE' VERSION='4' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME=''
 0 0 13; total number of columns (including user defined columns), sort column, and number of protected columns
@@ -702,9 +702,11 @@ TYPE='ANNOTATION' VERSION='8' UNITS='SI' SOURCE='PLS-POLE Version 20.01' USER='A
 '' ''
 TYPE='XARM PROPERTIES FILE' VERSION='11' UNITS='INTERNAL' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME='C:\Users\JAVIALFA\Desktop\SBB PROJECT\1. PROYECTO\OHL UL182\1. PLS-CADD\1. LINES\UL182\4. STRUCTURES\POLE\LIBRARY PLS-POLE\default.xrm'
 beamNo
-'CROSSARM-firstA' 'ACC-200' 1         0.06      0.00125      7.2e-05          800          0.3            firstA            1 210000000000      3000000      3000000      3000000            0            0            0          0.2 0 0
+'CROSSARM-firstA' 'ACC-200' 1         0.06      0.00125      7.2e-05          900          0.3          firstA            1 210000000000      3000000      3000000      3000000            0            0            0          0.2 0 0 
+0 
+'CROSSARM-secondA' 'ACC-200' 1         0.06      0.00125      7.2e-05          900          0.3         secondA           1 210000000000      3000000      3000000      3000000            0            0            0          0.2 0 0
 0
-'CROSSARM-secondA' 'ACC-200' 1         0.06      0.00125      7.2e-05          900          0.3            secondA            1 210000000000      3000000      3000000      3000000            0            0            0          0.2 0 0
+'CROSSARM-thirdA' 'ACC-200' 1         0.06      0.00125      7.2e-05          900          0.3          thirdA            1 210000000000      3000000      3000000      3000000            0            0            0          0.2 0 0
 0
 TYPE='Insulator Library' VERSION='11' UNITS='INTERNAL' SOURCE='PLS-POLE Version 20.01' USER='Axpo Grid AG - Switzerland' FILENAME=''
 CClampProperties
