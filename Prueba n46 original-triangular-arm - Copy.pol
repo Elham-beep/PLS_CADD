@@ -635,7 +635,7 @@ Undeformed Geometry
 1.5 midA HB
 1.5 firstA HA
 -1.5 firstA HA
-1.5 -firstA HC
+1.5 -firstA HC -->check
 -1.5 -thirdA HC
 1.5 -secondA HB
 -1.5 -secondA HB
